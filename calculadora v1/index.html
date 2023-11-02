@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Primeira Calculadora</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Calculadora do Ricardinho</h1>
+    <div id="calculo">
+        <input type="number" id="caixa1">
+        <select class="conta" name="aritmético" id="aritmético" onchange="mostraCampo(this);">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">x</option>
+            <option value="/">÷</option>
+        </select> 
+        <input type="number" id="caixa2">
+        <input type="button" class="igual" value="=" onclick="calcularResultado()">
+        <input type="number" id="resultado">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
